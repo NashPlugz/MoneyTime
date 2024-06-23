@@ -1,0 +1,4 @@
+# Config file for MoneyTime plugin
+# Specify the time duration in minutes and the corresponding reward amount
+rewardTime: 5 # 5 minutes
+rewardAmount: 100 # 100 currency units
