@@ -13,8 +13,6 @@ import java.util.UUID;
 
 public class PlayerConnectionListener implements Listener {
 
-    private final Configuration playerData = ConfigurationManager.getConfig(ConfigurationManager.Config.PLAYER_DATA);
-
     private final PlayerPlaytimeManager playtimeManager;
 
     public PlayerConnectionListener(PlayerPlaytimeManager playtimeManager) {
