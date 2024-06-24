@@ -1,4 +1,5 @@
 name: MoneyTime
 version: 1.0
-main: com.example.mtnp.MoneyTime
+api-version: 1.20
+main: me.nashplugz.mtnp.MoneyTime
 depend: [Vault]
