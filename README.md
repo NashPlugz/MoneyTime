@@ -1,9 +1,13 @@
 <div align="center">
-  <h1>MoneyTime</h1>
-  <h2>1.21 Support!</h2>
-  <p>
-    Today I am happy to announce that we have brought you the plugin that you have been waiting for! This plugin awards your players money based on the amount of money and and time interval you set it to within the config files.
+  <h1 style="color: #4CAF50;">MoneyTime</h1>
+  <h2 style="color: #FF5733;">1.21 Support!</h2>
+  <p style="font-size: 1.2em; font-family: Arial, sans-serif;">
+    Today I am happy to announce that we have brought the plugin that you have been waiting for! This plugin awards your players money based on the amount and interval you set it to within the config files.
   </p>
+  <p style="font-size: 1.2em;">
+    <strong><u>Permissions: <code>mt.payment.[RANK]</code></u></strong><br>
+    EX: <code>mt.payment.platinum</code><br>
+    This extension with your custom rank at the end will automatically be called from your rank system just add the permission to your rank!
+  </p>
+  ![MoneyTime Plugin Art Final](https://github.com/NashPlugz/MoneyTime/assets/173595197/520b6a96-dc4b-4b1b-8b15-98f1a47a4db6)
 </div>
-
-![MoneyTime Plugin Art Final](https://github.com/NashPlugz/MoneyTime/assets/173595197/1a657f3e-2038-42e6-a285-f6d23362438d)
