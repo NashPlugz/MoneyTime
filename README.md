@@ -1,8 +1,8 @@
                     Money Time
-•
-•
-•
-•
+• asd
+• asd
+• asd
+• asd
 •
 •
 •
