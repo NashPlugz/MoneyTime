@@ -10,7 +10,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitTask;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,16 +28,16 @@ public class PlayerPlaytimeManager {
     private final Economy economy;
     private final PaymentGroupManager paymentGroupManager;
 
-    private BukkitTask task;
-
     public PlayerPlaytimeManager(Plugin plugin, Economy economy, PaymentGroupManager paymentGroupManager) {
         this.plugin = plugin;
         this.economy = economy;
         this.paymentGroupManager = paymentGroupManager;
+
+        update();
     }
 
     private void update() {
-        task = new BukkitRunnable() {
+        new BukkitRunnable() {
             @Override
             public void run() {
                 playtimeMap.forEach((uuid, time) -> {
@@ -80,7 +79,6 @@ public class PlayerPlaytimeManager {
         long playtime = (long) playerData.get(uuid + ".playtime", Integer.class);
 
         playtimeMap.put(player.getUniqueId(), playtime);
-        if (task == null) update();
     }
 
     // Get the playtime of a player in minutes
@@ -92,13 +90,9 @@ public class PlayerPlaytimeManager {
     public void removePlayer(Player player) {
         UUID uuid = player.getUniqueId();
 
-        playerData.set(uuid + ".playtime", getPlaytime(player));
+        playerData.set(uuid + ".playtime", (int) getPlaytime(player));
 
         playtimeMap.remove(player.getUniqueId());
-        if (playtimeMap.isEmpty()) {
-            task.cancel();
-            task = null;
-        }
     }
 
 }
