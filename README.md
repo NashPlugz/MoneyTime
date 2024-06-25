@@ -9,5 +9,6 @@
     EX: <code>mt.payment.platinum</code><br>
     This extension with your custom rank at the end will automatically be called from your rank system just add the permission to your rank!
   </p>
-  ![MoneyTime Plugin Art Final](https://github.com/NashPlugz/MoneyTime/assets/173595197/520b6a96-dc4b-4b1b-8b15-98f1a47a4db6)
+  ![MoneyTime Plugin Art Final](https://github.com/NashPlugz/MoneyTime/assets/173595197/d8b49d37-8263-4097-bde9-3cf698670c15)
+
 </div>
